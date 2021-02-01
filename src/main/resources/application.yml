@@ -1,0 +1,14 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd
+    timezone: GMT+10
+    serialization:
+#      write-dates-as-timestamps: true #数值表示时间
+      write-dates-as-timestamps: false
+
+logging:
+  file:
+    name: target/app.log
+  level:
+    ROOT: WARN
+    com.restfulapi: TRACE
